@@ -21,14 +21,19 @@ class grandParents {
     this.hairColor = hairColor;
     this.eyeColor = eyeColor;
     this.vertical = vertical;
-  };
-  class parents {
-    constructor() {
+  }
+
+  get hairColor(){ return this.hairColor}
+  set
+
+
+  class parents extends grandParents {
+    constructor(hairColor, eyeColor, vertical) {
 
     }
   }
-    class children {
-      constructor() {
+    class children extends parents {
+      constructor(hairColor, eyeColor, vertical) {
 
       }
     }
