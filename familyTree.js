@@ -16,38 +16,30 @@ Timely Submission: 25% of your grade will be based on having a complete solution
 Style: 25% of your grade will be based on having legible, and well-designed code.
 */
 class Grandparents {
-  constructor(hairColor, eyeColor, vertical) {
+  constructor(hairColor, eyeColor, vertical, name) {
     this.hairColor = hairColor;
     this.eyeColor = eyeColor;
     this.vertical = vertical;
+    this.name = name;
   }
-  getVerticalMessage(`gramps can jump ${this.vertical} feet`);
+  showDetails(){
+    return `${this.name} has ${this.hairColor} hair and can jump ${this.vertical} feet`
+  }
 }
 
 class Parents extends Grandparents {
-  constructor(hairColor, eyeColor, vertical) {
-    this.hairColor = hairColor;
-    this.eyeColor = eyeColor;
-    this.vertical = vertical;
-  }
 }
 
 class Children extends Parents {
-  constructor(hairColor, eyeColor, vertical) {
-    this.hairColor = hairColor;
-    this.eyeColor = eyeColor;
-    this.vertical = vertical;
-  }
 }
-
-
 
 var famTree = []
 
-console.log(`gramps can jump ${this.vertical} feet`)
-console.log(`mom can jump ${this.vertical} feet`)
-console.log(`daughter can jump ${this.vertical} feet`)
+famTree.push(new Grandparents("blue", "black", 30, 'birdguy'))
+famTree.push(new Parents("black", "red", 5, 'dad'))
+famTree.push(new Children("white", "white", 85, 'Theory'))
 
-famTree.push(new Grandparents("blue", "black", 30))
-famTree.push(new Parents("black", "red", 5))
-famTree.push(new Children("white", "white", 85))
+for(var i = 0; i < famTree.length; i++){
+  var currentFamTreeMember = famTree[i]
+  console.log(currentFamTreeMember.showDetails());
+}
