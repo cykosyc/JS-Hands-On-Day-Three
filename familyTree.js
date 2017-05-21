@@ -16,23 +16,21 @@ Timely Submission: 25% of your grade will be based on having a complete solution
 Style: 25% of your grade will be based on having legible, and well-designed code.
 */
 
-class grandParents {
+class Grandparents {
   constructor(hairColor, eyeColor, vertical) {
     this.hairColor = hairColor;
     this.eyeColor = eyeColor;
     this.vertical = vertical;
   }
-
-  get hairColor(){ return this.hairColor}
-  set
+var grandparents = new
 
 
-  class parents extends grandParents {
+  class Parents extends Grandparents {
     constructor(hairColor, eyeColor, vertical) {
 
     }
   }
-    class children extends parents {
+    class Children extends Parents {
       constructor(hairColor, eyeColor, vertical) {
 
       }
