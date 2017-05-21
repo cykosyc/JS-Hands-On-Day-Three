@@ -20,13 +20,14 @@ class Grandparents {
     this.hairColor = hairColor;
     this.eyeColor = eyeColor;
     this.vertical = vertical;
-      console.log(`gramps can jump ${this.vertical} feet`)
     }
 }
 
   class Parents extends Grandparents {
     constructor(hairColor, eyeColor, vertical) {
-      this.skinColor = skinColor
+      this.hairColor = hairColor;
+      this.eyeColor = eyeColor;
+      this.vertical = vertical;
     }
   }
 
@@ -38,7 +39,13 @@ class Grandparents {
       }
     }
 
+
+
 var famTree = []
+
+console.log(`gramps can jump ${this.vertical} feet`)
+console.log(`mom can jump ${this.vertical} feet`)
+console.log(`daughter can jump ${this.vertical} feet`)
 
 famTree.push(new Grandparents("blue", "black", 30))
 famTree.push(new Parents("black", "red", 5))
