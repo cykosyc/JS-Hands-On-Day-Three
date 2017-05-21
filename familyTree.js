@@ -15,24 +15,40 @@ Meets all Requirements: 50% of your grade will be based on meeting the requireme
 Timely Submission: 25% of your grade will be based on having a complete solution on time.
 Style: 25% of your grade will be based on having legible, and well-designed code.
 */
-
 class Grandparents {
-  constructor(hairColor, eyeColor, vertical) {
+  constructor(hairColor, eyeColor) {
     this.hairColor = hairColor;
     this.eyeColor = eyeColor;
     this.vertical = vertical;
+      console.log("gramps can jump 80 feet";);
+    }
   }
-var grandparents = new
-
-
+  report() {
+    return `
+hair color: ${this.hairColor},
+eye color: ${this.eyeColor},
+vertical:  ${this.vertical}`;
+  }
+}
   class Parents extends Grandparents {
-    constructor(hairColor, eyeColor, vertical) {
+    constructor(hairColor, eyeColor) {
+      this.skinColor = skinColor
+    }
+    report() {
+      let tree = 'family tree'
 
     }
   }
     class Children extends Parents {
       constructor(hairColor, eyeColor, vertical) {
-
+        this.hairColor = hairColor;
+        this.eyeColor = eyeColor;
+        this.vertical = vertical;
       }
     }
-}
+
+var famTree = []
+
+famTree.push(new Grandparents("blue", "black", 30))
+famTree.push(new Parents("black", "red", 5))
+famTree.push(new Children("white", "white", 85))
