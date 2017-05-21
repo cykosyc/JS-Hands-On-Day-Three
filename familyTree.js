@@ -21,9 +21,7 @@ class Grandparents {
     this.eyeColor = eyeColor;
     this.vertical = vertical;
   }
-  grandparentsVertical(){
-  
-  }
+  getVerticalMessage(`gramps can jump ${this.vertical} feet`);
 }
 
 class Parents extends Grandparents {
