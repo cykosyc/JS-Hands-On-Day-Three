@@ -20,24 +20,27 @@ class Grandparents {
     this.hairColor = hairColor;
     this.eyeColor = eyeColor;
     this.vertical = vertical;
-    }
+  }
+  grandparentsVertical(){
+  
+  }
 }
 
-  class Parents extends Grandparents {
-    constructor(hairColor, eyeColor, vertical) {
-      this.hairColor = hairColor;
-      this.eyeColor = eyeColor;
-      this.vertical = vertical;
-    }
+class Parents extends Grandparents {
+  constructor(hairColor, eyeColor, vertical) {
+    this.hairColor = hairColor;
+    this.eyeColor = eyeColor;
+    this.vertical = vertical;
   }
+}
 
-    class Children extends Parents {
-      constructor(hairColor, eyeColor, vertical) {
-        this.hairColor = hairColor;
-        this.eyeColor = eyeColor;
-        this.vertical = vertical;
-      }
-    }
+class Children extends Parents {
+  constructor(hairColor, eyeColor, vertical) {
+    this.hairColor = hairColor;
+    this.eyeColor = eyeColor;
+    this.vertical = vertical;
+  }
+}
 
 
 
